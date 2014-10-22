@@ -2,5 +2,5 @@
 	(:domain family-domain)
 	(:objects p1 p2 p3 p4 p5 p6 p7)
 	(:init (male p1) (female p2) (not-yet-born p3) (not-yet-born p4) (not-yet-born p5))
-	(:goal (and (is-granduncle-or-grandaunt-of p1 p1) (male p1)))
+	(:goal (and (is-granduncle-or-grandaunt-of p5 p5) (male p5)))
 )

@@ -1,6 +1,6 @@
 (define (problem family-4)
 	(:domain family-domain)
-	(:objects p1 p2 p3 p4 p5 p6 )
-	(:init (male p1) (female p2) (not-yet-born p3) (not-yet-born p4) (not-yet-born p5) (not-yet-born p6))
+	(:objects p1 p2 p3 p4 p5 p6 p7 p8 p9 p10)
+	(:init (male p1) (female p2) (not-yet-born p3) (not-yet-born p4) (not-yet-born p5) (not-yet-born p6) (not-yet-born p7) (not-yet-born p8) (not-yet-born p9) (not-yet-born p10))
 	(:goal (and (is-granduncle-or-grandaunt-of p1 p1) (male p1)))
 )

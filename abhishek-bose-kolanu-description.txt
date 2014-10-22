@@ -1,0 +1,16 @@
+We start with objects P1 through P7. P1 is Male and P2 is Female. P3 through P7 are not-yet-born.
+
+Step 0 has P1 and P2 give birth to a Female P4.
+Step 1 has P1 and P4 (father and daughter) give birth to a Male P3.
+Step 2 has P3 and P2 (son and aunt) give birth to a Male P5.
+Step 3 concludes P5 and P4 are siblings, with a common parent (mother) P2.
+Step 4 concludes P4 is the parent of P3 and P5 is the uncle of P3.
+Step 5 concludes that P5 is the uncle of P3 and P3 is the parent of P5. P5 is his own grand-uncle.
+
+
+step    0: GIVE-BIRTH-TO-DAUGHTER P1 P2 P4
+        1: GIVE-BIRTH-TO-SON P1 P4 P3
+        2: GIVE-BIRTH-TO-SON P3 P2 P5
+        3: CONCLUDE-SIBLINGS P2 P5 P4
+        4: CONCLUDE-UNCLE-AUNT-NEPHEW-NIECE P5 P4 P3
+        5: CONCLUDE-GRANDUNCLE-GRANDAUNT P5 P3 P5

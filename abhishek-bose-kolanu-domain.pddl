@@ -35,9 +35,9 @@
 	   :precondition (and (is-parent-of ?parent ?child)
 	   		      (is-sibling-of ?aunt ?parent))
            :effect (and (is-uncle-or-aunt-of ?aunt ?child)
-	   	   	(is-nephew-or-niece-of ?child ?aunt))))
+	   	   	(is-nephew-or-niece-of ?child ?aunt)))
   (:action conclude-granduncle-grandaunt
       :parameters (?uncle ?parent ?person)
     :precondition (and (is-parent-of ?parent ?person)
                         (is-uncle-or-aunt-of ?uncle ?parent))
-          :effect (is-granduncle-or-grandaunt-of ?uncle ?person))
+          :effect (is-granduncle-or-grandaunt-of ?uncle ?person)))
